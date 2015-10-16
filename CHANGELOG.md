@@ -1,6 +1,8 @@
 Changelog
 =========
 
+* v0.1.6
+  * Fixed WebSocket messages refresh
 * v0.1.5
   * Fixed WebSocket path
 * v0.1.4
