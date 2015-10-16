@@ -12,7 +12,7 @@
 
     // Functions
     function init() {
-      ws.provider = new $window.WebSocketRails('localhost:3000/websocket');
+      ws.provider = new $window.WebSocketRails($window.location.host + '/websocket');
       ws.bind = ws.provider.bind;
       ws.trigger = ws.provider.trigger;
     }
