@@ -2,9 +2,9 @@ class UsersController < WebsocketRails::BaseController
   def initialize_session
   end
 
-  def show_from_session
-    if session.include?(:current_user_id) and User.exists?(session[:current_user_id])
-      trigger_success User.find(session[:current_user_id]).to_json
+  def show
+    if User.exists?(message[:id])
+      trigger_success User.find(message[:id]).to_json
     else
       trigger_failure
     end

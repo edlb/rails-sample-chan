@@ -5,7 +5,7 @@ WebsocketRails::EventMap.describe do
   end
 
   namespace :users do
-    subscribe :show_from_session, to: UsersController, with_method: :show_from_session
+    subscribe :show, to: UsersController, with_method: :show
     subscribe :show_or_create, to: UsersController, with_method: :show_or_create
   end
 end
