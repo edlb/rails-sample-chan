@@ -1,6 +1,9 @@
 Changelog
 =========
 
+* v0.1.4
+  * Fixed javascript minification errors
+  * Removed unused routes
 * v0.1.3
   * Fixed Heroku database config (2)
 * v0.1.2
