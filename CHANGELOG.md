@@ -1,6 +1,8 @@
 Changelog
 =========
 
+* v0.1.2
+  * Fixed Heroku database config
 * v0.1.1
   * Improved messages display
 * v0.1.0
