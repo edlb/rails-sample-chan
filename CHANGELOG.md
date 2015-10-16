@@ -1,6 +1,8 @@
 Changelog
 =========
 
+* v0.1.7
+  * Replaced broken session with working cookies
 * v0.1.6
   * Fixed WebSocket messages refresh
 * v0.1.5
