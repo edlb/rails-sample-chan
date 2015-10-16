@@ -1,6 +1,8 @@
 Changelog
 =========
 
+* v0.1.5
+  * Fixed WebSocket path
 * v0.1.4
   * Fixed javascript minification errors
   * Removed unused routes
