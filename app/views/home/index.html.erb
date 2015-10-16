@@ -11,7 +11,7 @@
 </div>
 <%# Chan %>
 <div class="rc-messages" ng-show="vm.currentUser.isLogged">
-  <div class="rc-message" ng-class="{ 'rc-message-current': message.user.id === vm.currentUser.id }" ng-repeat="message in vm.messages track by $index">
+  <div class="rc-message" ng-class="{ 'rc-message-current': message.user.id === vm.currentUser.id }" ng-repeat="message in vm.messages | orderBy: '-created_at'">
     <div class="rc-message-user">{{ message.user.name }}:</div>
     <div class="rc-message-content">{{ message.content }}</div>
   </div>

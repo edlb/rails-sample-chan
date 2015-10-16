@@ -1,19 +1,10 @@
-// container
-.rc-header-container{
-  padding-top: $spacing-xs * 7;
-}
-
 // module
 .rc-header{
   background-color: $color-primary;
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
-  left: 0;
   padding: $spacing-xxs;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 10;
 }
 
 //children
