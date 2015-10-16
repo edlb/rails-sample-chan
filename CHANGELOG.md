@@ -1,6 +1,8 @@
 Changelog
 =========
 
+* v0.1.3
+  * Fixed Heroku database config (2)
 * v0.1.2
   * Fixed Heroku database config
 * v0.1.1
