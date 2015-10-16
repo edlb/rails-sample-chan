@@ -1,0 +1,80 @@
+// container
+.rc-header-container{
+  padding-top: $spacing-xs * 7;
+}
+
+// module
+.rc-header{
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: $spacing-xxs;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+//children
+.rc-header-heading, .rc-header-helper{
+  color: $color-text-reverse;
+  padding-left: $spacing-xxs;
+  padding-right: $spacing-xxs;
+}
+.rc-header-heading{
+  @include text('heading');
+  padding-bottom: $spacing-xs;
+  padding-top: $spacing-xs;
+}
+.rc-header-helper{
+  padding-bottom: $spacing-xs + ($font-size-heading - $font-size-body) / 2;
+  padding-top: $spacing-xs + ($font-size-heading - $font-size-body) / 2;
+  white-space: nowrap;
+}
+.rc-header-icon, .rc-header-icon::before{
+  border-radius: $border-radius-circle;
+  display: block;
+  height: $spacing-xlg;
+  width: $spacing-xlg;
+}
+.rc-header-icon{
+  position: relative;
+  // states
+  &:active{
+    // children
+    &::before{
+      transform: scale(1);
+    }
+  }
+  // children
+  &::before{
+    background-color: rgba($color-black, $alpha-divider);
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: transform $transition-duration-md;
+    z-index: -1;
+  }
+}
+.rc-header-icon-menu{
+  background-image: url('../ic-menu-reverse.svg');
+}
+.rc-header-section{
+  display: flex;
+}
+
+// media queries
+@media (orientation: landscape){
+  // container
+  .rc-header-container{
+    padding-top: $spacing-xlg;
+  }
+  // module
+  .rc-header{
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}

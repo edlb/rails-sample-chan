@@ -1,0 +1,15 @@
+// container
+.rc-header-container{
+  padding-top: $spacing-xxl;
+}
+
+// module
+.rc-header{
+  padding: $spacing-xs $spacing-sm;
+}
+
+// children
+.rc-header-heading, .rc-header-helper{
+  padding-left: $spacing-sm;
+  padding-right: $spacing-sm;
+}

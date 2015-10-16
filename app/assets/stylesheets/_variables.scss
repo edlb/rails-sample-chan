@@ -1,0 +1,70 @@
+// alphas
+$alpha-primary: .87;
+$alpha-secondary: .54;
+$alpha-hint: .38;
+$alpha-divider: .12;
+
+// order exception: required border radii
+// spacings
+$spacing-xxs: 4px;
+$spacing-xs: $spacing-xxs * 2;
+$spacing-sm: $spacing-xxs * 3;
+$spacing-md: $spacing-xxs * 4;
+$spacing-lg: $spacing-xxs * 6;
+$spacing-xl: $spacing-xxs * 8;
+$spacing-xlg: $spacing-xxs * 12;
+$spacing-xxl: $spacing-xxs * 16;
+
+// border radii
+$border-radius-circle: 50%;
+$border-radius-sm: $spacing-xxs * .5;
+$border-radius-md: $spacing-xxs;
+
+// colors base
+$color-black: #000;
+$color-blue-500: #2196f3;
+$color-blue-700: #1976d2;
+$color-red-500: #f00; // TODO :: fix this
+$color-white: #fff;
+
+// colors usage
+$color-body: #fafafa;
+$color-border: rgba($color-black, $alpha-divider);
+$color-card: $color-white;
+$color-invalid: $color-red-500;
+$color-primary: $color-blue-500;
+$color-primary-dark: $color-blue-700;
+$color-text: rgba($color-black, $alpha-primary);
+$color-text-reverse: $color-white;
+$color-text-secondary: rgba($color-black, $alpha-secondary);
+
+// fonts families
+$font-family-default: 'Roboto', sans-serif;
+
+// fonts sizes
+$font-size-helper: 14px;
+$font-size-body: 16px;
+$font-size-important: 18px;
+$font-size-button: 20px;
+$font-size-heading: 24px;
+$font-size-heading-lg: 36px;
+$font-size-large: 56px;
+
+// fonts weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+
+// screen sizes
+$screen-sm-min: 768px;
+
+// scroll bars
+$scroll-bar-max: 20px;
+
+// text indents
+$text-hide: -9999px;
+
+//transitions
+$transition-duration-sm: .1s;
+$transition-duration-md: .2s;
+$transition-duration-lg: .4s;

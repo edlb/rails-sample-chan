@@ -1,0 +1,26 @@
+// container
+.rc-messages{
+  flex-grow: 1;
+  margin-bottom: $spacing-xxs;
+}
+
+// module
+.rc-message{
+  @include text('helper');
+  display: flex;
+  margin-top: $spacing-xxs;
+}
+
+// subclasses
+.rc-message-current{
+  color: $color-text-secondary;
+}
+
+// children
+.rc-message-user{
+  flex-shrink: 0;
+  margin-right: $spacing-xxs;
+}
+.rc-message-content{
+  flex-grow: 1;
+}

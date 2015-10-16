@@ -1,0 +1,24 @@
+{
+  "name": "rails-sample-chan",
+  "version": "0.0.0",
+  "description": "",
+  "author": "@edlb",
+  "scripts": {},
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edlb/rails-sample-chan.git"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "browserify": "^11.2.0",
+    "browserify-incremental": "^3.0.1",
+    "browserify-ngannotate": "^1.0.1",
+    "minifyify": "^7.1.0",
+    "rx-angular": "^1.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "4.1.1"
+  }
+}

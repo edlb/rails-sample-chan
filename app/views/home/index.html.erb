@@ -1,0 +1,26 @@
+<%# Login %>
+<div class="rc-card rc-card-sm" ng-show="!vm.currentUser.isLogged">
+  <form class="rc-form" novalidate>
+    <div class="rc-form-group">
+      <input class="rc-form-field" ng-model="vm.currentUser.name" placeholder="Nickname" required type="text">
+    </div>
+    <div class="rc-form-options">
+      <button class="rc-btn rc-btn-primary" ng-click="vm.join()">Join chan</button>
+    </div>
+  </form>
+</div>
+<%# Chan %>
+<div class="rc-messages" ng-show="vm.currentUser.isLogged">
+  <div class="rc-message" ng-class="{ 'rc-message-current': message.user.id === vm.currentUser.id }" ng-repeat="message in vm.messages track by $index">
+    <div class="rc-message-user">{{ message.user.name }}:</div>
+    <div class="rc-message-content">{{ message.content }}</div>
+  </div>
+</div>
+<form class="rc-form rc-form-horizontal" ng-show="vm.currentUser.isLogged" novalidate>
+  <div class="rc-form-group">
+    <input class="rc-form-field" ng-model="vm.currentMessage.content" type="text">
+  </div>
+  <div class="rc-form-options">
+    <button class="rc-btn rc-btn-primary" ng-click="vm.messageCreate()">Send</button>
+  </div>
+</form>

@@ -1,0 +1,24 @@
+// fonts
+@mixin text($size-name) {
+  @if $size-name == 'helper' {
+    @include text-form-size($font-size-helper);
+  } @else if $size-name == 'body' {
+    @include text-form-size($font-size-body);
+  } @else if $size-name == 'important' {
+    @include text-form-size($font-size-important);
+  } @else if $size-name == 'button' {
+    @include text-form-size($font-size-button);
+  } @else if $size-name == 'card-heading' {
+    @include text-form-size($font-size-card-heading);
+  } @else if $size-name == 'heading' {
+    @include text-form-size($font-size-heading);
+  } @else if $size-name == 'heading-lg' {
+    @include text-form-size($font-size-heading-lg);
+  } @else if $size-name == 'large' {
+    @include text-form-size($font-size-large);
+  }
+}
+@mixin text-form-size($size) {
+  font-size: $size;
+  line-height: $size + $spacing-xs;
+}

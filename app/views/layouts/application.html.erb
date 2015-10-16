@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="AppController as vm">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rails sample chan</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="rc-header-container" ng-class="{ 'is-ready': vm.isReady }">
+  <div class="rc-header">
+    <div class="rc-header-section">
+      <button class="rc-header-icon rc-header-icon-menu"></button>
+      <h1 class="rc-header-heading">Sample</h1>
+    </div>
+    <div class="rc-header-section" ng-show="vm.currentUser.isLogged">
+      <p class="rc-header-helper">{{ vm.currentUser.name }}</p>
+    </div>
+  </div>
+  <div class="rc-container">
+    <%= yield %>
+  </div>
+</body>
+</html>

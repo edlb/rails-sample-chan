@@ -1,0 +1,39 @@
+// containers
+.rc-form{
+  margin-top: - $spacing-md;
+}
+.rc-form-group, .rc-form-options{
+  margin-top: $spacing-md;
+}
+.rc-form-options{
+  display: flex;
+  justify-content: flex-end;
+}
+// -- subclasses
+.rc-form-horizontal{
+  display: flex;
+  .rc-form-group{
+    flex-grow: 1;
+  }
+  .rc-form-options{
+    flex-shrink: 0;
+    margin-left: $spacing-xs;
+  }
+}
+
+// module
+.rc-form-field{
+  @include text('important');
+  border: 1px solid $color-border;
+  border-radius: $border-radius-sm;
+  display: block;
+  padding: $spacing-xxs $spacing-xs;
+  width: 100%;
+  // states
+  &:focus{
+    border-color: $color-primary;
+  }
+  &.ng-touched.ng-invalid{
+    border-color: $color-invalid;
+  }
+}

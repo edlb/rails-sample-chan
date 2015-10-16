@@ -1,0 +1,17 @@
+// module
+.rc-btn{
+  border-radius: $border-radius-sm;
+  color: $color-text-reverse;
+  padding: $spacing-xxs $spacing-xs;
+  text-transform: uppercase;
+  transition: background-color $transition-duration-md;
+}
+
+// subclasses
+.rc-btn-primary{
+  background-color: $color-primary;
+  // states
+  &:hover, &:active{
+    background-color: $color-primary-dark;
+  }
+}
