@@ -26,6 +26,6 @@ test:
 
 production:
   <<: *default
-  database: rails-sample-chan_production
-  username: rails-sample-chan
+  database: ddm9vluvr5nb0d
+  username: frhenohqrgosmh
   password: <%= ENV['RAILS-SAMPLE-CHAN_DATABASE_PASSWORD'] %>
