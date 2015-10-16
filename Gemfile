@@ -47,6 +47,7 @@ end
 
 # More gems
 gem 'browserify-rails'
+gem 'ngannotate-rails'
 gem 'rails_12factor', group: :production
 gem 'websocket-rails'
 
