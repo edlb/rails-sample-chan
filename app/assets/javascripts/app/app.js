@@ -20,7 +20,7 @@
       ws.init();
       user.showFromSession(function(currentUser) {
         joined(currentUser, true);
-      }, function(response) {
+      }, function() {
         vm.isReady = true;
         $scope.$apply();
       });
@@ -60,8 +60,9 @@
           vm.isReady = true;
         }
         $scope.$apply();
-        ws.bind('message', function(message) {
+        ws.subscribe('messages').bind('message', function(message) {
           vm.messages.push(JSON.parse(message));
+          $scope.$apply();
         });
       }, function(response) {
         console.log(response);

@@ -14,6 +14,7 @@
     function init() {
       ws.provider = new $window.WebSocketRails($window.location.host + '/websocket');
       ws.bind = ws.provider.bind;
+      ws.subscribe = ws.provider.subscribe;
       ws.trigger = ws.provider.trigger;
     }
   }

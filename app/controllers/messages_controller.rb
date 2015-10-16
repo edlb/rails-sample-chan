@@ -2,7 +2,7 @@ class MessagesController < WebsocketRails::BaseController
   def create
     @message = Message.new(message[:message])
     if @message.save
-      broadcast_message :message, @message.to_json(include: :user)
+      WebsocketRails[:messages].trigger(:message, @message.to_json(include: :user))
       trigger_success
     else
       trigger_failure
