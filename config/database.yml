@@ -26,6 +26,6 @@ test:
 
 production:
   <<: *default
-  database: ddm9vluvr5nb0d
-  username: frhenohqrgosmh
-  password: <%= ENV['RAILS-SAMPLE-CHAN_DATABASE_PASSWORD'] %>
+  database: d9o4lsf0dlffqu
+  username: ipequblnsmkpax
+  password: <%= ENV['DATABASE_PASSWORD'] %>
