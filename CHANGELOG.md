@@ -1,6 +1,8 @@
 Changelog
 =========
 
+* v0.1.1
+  * Improved messages display
 * v0.1.0
   * Added Heroku config
 * v0.0.1
