@@ -16,7 +16,7 @@ class UsersController < WebsocketRails::BaseController
       @user = User.new(name: message[:name])
       @user.save
     end
-    session[:current_user_id] = @user.id
+    # session[:current_user_id] = @user.id
 
     trigger_success @user.to_json
   end
