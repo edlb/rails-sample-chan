@@ -20,9 +20,11 @@
       ws.init();
       user.showFromSession(function(currentUser) {
         joined(currentUser, true);
-      }, function() {
+      }, function(preventApply) {
         vm.isReady = true;
-        $scope.$apply();
+        if (!preventApply) {
+          $scope.$apply();
+        }
       });
     }
     function currentMessageInit() {
